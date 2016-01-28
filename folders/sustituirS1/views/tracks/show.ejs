@@ -1,0 +1,10 @@
+<div class="track track_playing container mainContainer">
+        <h1 class="font1"><%=track.name.split('.')[0]%></h1>
+	<img id="imgShow" class="img" src="<%=track.urlImg%>">
+	<audio src="<%=track.url%>" type="audio/mpeg" controls="controls"></audio>
+	<form method="post" action="http://www.cdpsfy.es:80/track/<%=track.name%>?_method=delete">
+	    <button type="submit" onClick="return confirm('Delete: <%=track.name.split('.')[0]%>. Are you sure? ');">
+	      Delete track
+	    </button>
+  	</form>
+</div>

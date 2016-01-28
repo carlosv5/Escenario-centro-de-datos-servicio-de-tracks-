@@ -1,0 +1,12 @@
+<div class="container mainContainer">
+	<div class="jumbotron fondoNegro">
+		<div class="row">
+			<h1 class="font1"><%= message %></h1>
+			<%if(error != "handle"){%>
+			<h2 class="font1"><%= error.status %></h2>
+			<pre><%= error.stack %></pre>
+			<%}%>
+		</div>
+	</div>
+
+</div>
